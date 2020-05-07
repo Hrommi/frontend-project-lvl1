@@ -17,3 +17,8 @@ make brain-even
 make brain-calc
 ```
 [![asciicast](https://asciinema.org/a/TM3CoaVZO9Adx6agmX9zch9w8.svg)](https://asciinema.org/a/TM3CoaVZO9Adx6agmX9zch9w8)
+### Start brain-gcd game
+```
+make brain-gcd
+```
+[![asciicast](https://asciinema.org/a/jQu9fXUPrTpnc1Wv8jhJqL5aZ.svg)](https://asciinema.org/a/jQu9fXUPrTpnc1Wv8jhJqL5aZ)
