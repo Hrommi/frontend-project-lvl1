@@ -12,3 +12,8 @@ make install
 make brain-even
 ```
 [![asciicast](https://asciinema.org/a/A9KlXIILKbjYEl6GKW199586C.svg)](https://asciinema.org/a/A9KlXIILKbjYEl6GKW199586C)
+### Start brain-calc game
+```
+make brain-calc
+```
+[![asciicast](https://asciinema.org/a/TM3CoaVZO9Adx6agmX9zch9w8.svg)](https://asciinema.org/a/TM3CoaVZO9Adx6agmX9zch9w8)
