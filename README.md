@@ -22,3 +22,8 @@ make brain-calc
 make brain-gcd
 ```
 [![asciicast](https://asciinema.org/a/jQu9fXUPrTpnc1Wv8jhJqL5aZ.svg)](https://asciinema.org/a/jQu9fXUPrTpnc1Wv8jhJqL5aZ)
+### Start brain-progression game
+```
+make brain-progression
+```
+[![asciicast](https://asciinema.org/a/m6d0NgtXZhTyPpXconaZ5DcdA.svg)](https://asciinema.org/a/m6d0NgtXZhTyPpXconaZ5DcdA)
