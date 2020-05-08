@@ -27,3 +27,8 @@ make brain-gcd
 make brain-progression
 ```
 [![asciicast](https://asciinema.org/a/m6d0NgtXZhTyPpXconaZ5DcdA.svg)](https://asciinema.org/a/m6d0NgtXZhTyPpXconaZ5DcdA)
+### Start brain-prime game
+```
+make brain-prime
+```
+[![asciicast](https://asciinema.org/a/yvpIoNIy6xnuL8mnqrwa1iGcK.svg)](https://asciinema.org/a/yvpIoNIy6xnuL8mnqrwa1iGcK)
