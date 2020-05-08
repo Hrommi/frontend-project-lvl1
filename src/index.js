@@ -1,5 +1,7 @@
 import prompt from './cli.js';
 
+const ROUND_COUNT = 3;
+
 const startGame = (game, username) => {
   const loseMessage = `Let's try again, ${username}`;
   const winMessage = `Congratulations, ${username}!`;
@@ -7,7 +9,7 @@ const startGame = (game, username) => {
 
   console.log(rules);
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < ROUND_COUNT; i += 1) {
     const { question, expectedAnswer } = start();
     console.log(`Question: ${question}`);
     const answer = prompt('Your answer: ');
