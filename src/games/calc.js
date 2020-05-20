@@ -15,10 +15,14 @@ const mapping = {
   },
 };
 
+const getOperator = () => (
+  mapping[getRandomNum(0, Object.keys(mapping).length - 1)]
+);
+
 const calc = () => {
   const rules = 'What is the result of the expression?';
   const start = () => {
-    const operator = mapping[getRandomNum(0, 2)];
+    const operator = getOperator();
     const num1 = getRandomNum(0, 10);
     const num2 = getRandomNum(0, 10);
     const expectedAnswer = String(operator.result(num1, num2));
