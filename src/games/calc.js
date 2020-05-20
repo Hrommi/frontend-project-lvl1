@@ -2,15 +2,15 @@ import getRandomNum from '../utils/getRandomNum.js';
 
 const mapping = {
   0: {
-    opetator: '+',
+    operator: '+',
     result: (a, b) => a + b,
   },
   1: {
-    opetator: '-',
+    operator: '-',
     result: (a, b) => a - b,
   },
   2: {
-    opetator: '*',
+    operator: '*',
     result: (a, b) => a * b,
   },
 };
@@ -18,12 +18,12 @@ const mapping = {
 const calc = () => {
   const rules = 'What is the result of the expression?';
   const start = () => {
-    const operaton = mapping[getRandomNum(0, 2)];
+    const operator = mapping[getRandomNum(0, 2)];
     const num1 = getRandomNum(0, 10);
     const num2 = getRandomNum(0, 10);
-    const expectedAnswer = String(operaton.result(num1, num2));
+    const expectedAnswer = String(operator.result(num1, num2));
     return {
-      question: `${num1} ${operaton.opetator} ${num2}`,
+      question: `${num1} ${operator.operator} ${num2}`,
       expectedAnswer,
     };
   };
