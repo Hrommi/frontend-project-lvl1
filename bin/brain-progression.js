@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 
-import initialize from '../src/initialize.js';
-import startGame from '../src/index.js';
-import progressionGame from '../src/games/progression.js';
+import startProgressionGame from '../src/runners/progression.js';
 
-const { username } = initialize();
-startGame(progressionGame, username);
+startProgressionGame();
