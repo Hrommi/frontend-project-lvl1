@@ -1,7 +1,7 @@
 import getRandomNum from '../utils/getRandomNum.js';
 import isPrime from '../utils/isPrime.js';
 
-const prime = () => {
+const getPrimeGame = () => {
   const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const start = () => {
     const num = getRandomNum(1, 99);
@@ -18,4 +18,4 @@ const prime = () => {
   };
 };
 
-export default prime;
+export default getPrimeGame;

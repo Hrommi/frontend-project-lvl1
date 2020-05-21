@@ -1,10 +1,10 @@
 import initialize from '../initialize.js';
 import startGame from '../index.js';
-import primeGame from '../games/prime.js';
+import getPrimeGame from '../games/prime.js';
 
 const startPrimeGame = () => {
   const { username } = initialize();
-  startGame(primeGame, username);
+  startGame(getPrimeGame, username);
 };
 
 export default startPrimeGame;

@@ -1,10 +1,10 @@
 import initialize from '../initialize.js';
 import startGame from '../index.js';
-import gcdGame from '../games/gcd.js';
+import getGcdGame from '../games/gcd.js';
 
 const startGcdGame = () => {
   const { username } = initialize();
-  startGame(gcdGame, username);
+  startGame(getGcdGame, username);
 };
 
 export default startGcdGame;

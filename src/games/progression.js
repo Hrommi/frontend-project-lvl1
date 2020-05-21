@@ -14,7 +14,7 @@ const prepareProgression = (progression, index) => {
   return [...head, '..', ...tail];
 };
 
-const progression = () => {
+const getProgressionGame = () => {
   const rules = 'What number is missing in the progression?';
   const start = () => {
     const initialTerm = getRandomNum(0, 10);
@@ -35,4 +35,4 @@ const progression = () => {
   };
 };
 
-export default progression;
+export default getProgressionGame;

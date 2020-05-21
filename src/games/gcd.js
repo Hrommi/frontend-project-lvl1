@@ -1,7 +1,7 @@
 import getRandomNum from '../utils/getRandomNum.js';
 import getGcd from '../utils/getGcd.js';
 
-const jcd = () => {
+const getGcdGame = () => {
   const rules = 'What is the result of the expression?';
   const start = () => {
     const num1 = getRandomNum(0, 10);
@@ -19,4 +19,4 @@ const jcd = () => {
   };
 };
 
-export default jcd;
+export default getGcdGame;

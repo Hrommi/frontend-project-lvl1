@@ -1,7 +1,7 @@
 import getRandomNum from '../utils/getRandomNum.js';
 import isEven from '../utils/isEven.js';
 
-const even = () => {
+const getEvenGame = () => {
   const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
   const start = () => {
     const num = getRandomNum(0, 99);
@@ -18,4 +18,4 @@ const even = () => {
   };
 };
 
-export default even;
+export default getEvenGame;

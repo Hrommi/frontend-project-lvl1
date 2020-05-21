@@ -19,7 +19,7 @@ const getOperator = () => (
   mapping[getRandomNum(0, Object.keys(mapping).length - 1)]
 );
 
-const calc = () => {
+const getCalcGame = () => {
   const rules = 'What is the result of the expression?';
   const start = () => {
     const operator = getOperator();
@@ -38,4 +38,4 @@ const calc = () => {
   };
 };
 
-export default calc;
+export default getCalcGame;
