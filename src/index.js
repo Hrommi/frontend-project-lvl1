@@ -3,8 +3,6 @@ import prompt from './cli.js';
 const ROUND_COUNT = 3;
 
 const startGame = (game, username) => {
-  const loseMessage = `Let's try again, ${username}`;
-  const winMessage = `Congratulations, ${username}!`;
   const { rules, start } = game();
 
   console.log(rules);
@@ -18,12 +16,12 @@ const startGame = (game, username) => {
       console.log('Correct!');
     } else {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "${expectedAnswer}".`);
-      console.log(loseMessage);
+      console.log(`Let's try again, ${username}`);
       return;
     }
   }
 
-  console.log(winMessage);
+  console.log(`Congratulations, ${username}!`);
 };
 
 export default startGame;
