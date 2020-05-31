@@ -3,12 +3,12 @@ import prompt from './cli.js';
 const ROUND_COUNT = 3;
 
 const startGame = (game, username) => {
-  const { rules, start } = game();
+  const { rules, start: startRound } = game();
 
   console.log(rules);
 
   for (let i = 0; i < ROUND_COUNT; i += 1) {
-    const { question, expectedAnswer } = start();
+    const { question, expectedAnswer } = startRound();
     console.log(`Question: ${question}`);
     const answer = prompt('Your answer: ');
 
