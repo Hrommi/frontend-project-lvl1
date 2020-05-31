@@ -1,4 +1,5 @@
 import getRandomNum from '../utils/getRandomNum.js';
+import startGame from '../index.js';
 
 const PROGRESSION_LENGTH = 10;
 
@@ -34,4 +35,6 @@ const getProgressionGame = () => {
   };
 };
 
-export default getProgressionGame;
+export default () => {
+  startGame(getProgressionGame);
+};

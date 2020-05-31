@@ -1,5 +1,6 @@
 import getRandomNum from '../utils/getRandomNum.js';
 import getGcd from '../utils/getGcd.js';
+import startGame from '../index.js';
 
 const getGcdGame = () => {
   const rules = 'What is the result of the expression?';
@@ -19,4 +20,6 @@ const getGcdGame = () => {
   };
 };
 
-export default getGcdGame;
+export default () => {
+  startGame(getGcdGame);
+};

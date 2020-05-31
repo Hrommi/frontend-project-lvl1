@@ -1,4 +1,5 @@
 import getRandomNum from '../utils/getRandomNum.js';
+import startGame from '../index.js';
 
 const mapping = {
   0: {
@@ -38,4 +39,6 @@ const getCalcGame = () => {
   };
 };
 
-export default getCalcGame;
+export default () => {
+  startGame(getCalcGame);
+};
