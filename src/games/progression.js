@@ -15,26 +15,20 @@ const getQuestion = (progression, index) => {
   return [...head, '..', ...tail].join(' ');
 };
 
-const getProgressionGame = () => {
-  const rules = 'What number is missing in the progression?';
-  const start = () => {
-    const initialTerm = getRandomNum(0, 10);
-    const difference = getRandomNum(1, 10);
-    const progression = getProgression(initialTerm, difference);
-    const hiddenElementIndex = getRandomNum(0, progression.length - 1);
-    const expectedAnswer = String(progression[hiddenElementIndex]);
-    return {
-      question: getQuestion(progression, hiddenElementIndex),
-      expectedAnswer,
-    };
-  };
+const rules = 'What number is missing in the progression?';
 
+const startProgressionGame = () => {
+  const initialTerm = getRandomNum(0, 10);
+  const difference = getRandomNum(1, 10);
+  const progression = getProgression(initialTerm, difference);
+  const hiddenElementIndex = getRandomNum(0, progression.length - 1);
+  const expectedAnswer = String(progression[hiddenElementIndex]);
   return {
-    rules,
-    start,
+    question: getQuestion(progression, hiddenElementIndex),
+    expectedAnswer,
   };
 };
 
 export default () => {
-  startGame(getProgressionGame);
+  startGame(rules, startProgressionGame);
 };

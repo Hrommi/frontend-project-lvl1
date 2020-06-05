@@ -2,12 +2,11 @@ import prompt from './cli.js';
 
 const ROUND_COUNT = 3;
 
-const startGame = (game) => {
+const startGame = (rules, startRound) => {
   console.log('Welcome to the Brain Games!');
   const username = prompt('May I have your name? ');
   console.log(`Hello, ${username}!`);
 
-  const { rules, start: startRound } = game();
   console.log(rules);
 
   for (let i = 0; i < ROUND_COUNT; i += 1) {
