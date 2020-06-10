@@ -4,9 +4,11 @@ import startGame from '../index.js';
 const PROGRESSION_LENGTH = 10;
 
 const getProgression = (initialTerm, difference) => (
-  [...Array(PROGRESSION_LENGTH)].map((_, i) => (
-    initialTerm + difference * i
-  ))
+  Array(PROGRESSION_LENGTH)
+    .fill()
+    .map((_, i) => (
+      initialTerm + difference * i
+    ))
 );
 
 const getQuestion = (progression, index) => {
