@@ -1,8 +1,11 @@
 import getRandomNum from '../utils/getRandomNum.js';
-import getGcd from '../utils/getGcd.js';
 import startGame from '../index.js';
 
 const rules = 'What is the result of the expression?';
+
+const getGcd = (a, b) => (
+  (a % b) ? getGcd(b, a % b) : Math.abs(b)
+);
 
 const startGcdGame = () => {
   const num1 = getRandomNum(0, 10);
