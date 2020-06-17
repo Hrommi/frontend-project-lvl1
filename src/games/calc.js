@@ -16,7 +16,7 @@ const operations = [
   },
 ];
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const startCalcGame = () => {
   const operationIndex = getRandomNum(0, operations.length - 1);
@@ -31,5 +31,5 @@ const startCalcGame = () => {
 };
 
 export default () => {
-  startGame(rules, startCalcGame);
+  startGame(description, startCalcGame);
 };

@@ -1,7 +1,7 @@
 import getRandomNum from '../utils/getRandomNum.js';
 import startGame from '../index.js';
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const getGcd = (a, b) => (
   (a % b) ? getGcd(b, a % b) : Math.abs(b)
@@ -18,5 +18,5 @@ const startGcdGame = () => {
 };
 
 export default () => {
-  startGame(rules, startGcdGame);
+  startGame(description, startGcdGame);
 };

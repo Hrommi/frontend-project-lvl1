@@ -17,7 +17,7 @@ const getQuestion = (progression, index) => {
   return [...head, '..', ...tail].join(' ');
 };
 
-const rules = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const startProgressionGame = () => {
   const initialTerm = getRandomNum(0, 10);
@@ -32,5 +32,5 @@ const startProgressionGame = () => {
 };
 
 export default () => {
-  startGame(rules, startProgressionGame);
+  startGame(description, startProgressionGame);
 };
