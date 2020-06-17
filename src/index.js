@@ -1,6 +1,6 @@
 import prompt from './cli.js';
 
-const ROUND_COUNT = 3;
+const ROUNDS_COUNT = 3;
 
 const startGame = (rules, startRound) => {
   console.log('Welcome to the Brain Games!');
@@ -9,7 +9,7 @@ const startGame = (rules, startRound) => {
 
   console.log(rules);
 
-  for (let i = 0; i < ROUND_COUNT; i += 1) {
+  for (let i = 0; i < ROUNDS_COUNT; i += 1) {
     const { question, expectedAnswer } = startRound();
     console.log(`Question: ${question}`);
     const answer = prompt('Your answer: ');
