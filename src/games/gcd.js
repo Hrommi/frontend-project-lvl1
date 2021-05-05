@@ -3,9 +3,7 @@ import startGame from '../index.js';
 
 const description = 'What is the result of the expression?';
 
-const getGcd = (a, b) => (
-  (a % b) ? getGcd(b, a % b) : Math.abs(b)
-);
+const getGcd = (a, b) => (a % b ? getGcd(b, a % b) : Math.abs(b));
 
 const startGcdGame = () => {
   const num1 = getRandomNum(0, 10);

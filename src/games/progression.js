@@ -3,13 +3,10 @@ import startGame from '../index.js';
 
 const PROGRESSION_LENGTH = 10;
 
-const getProgression = (initialTerm, difference) => (
+const getProgression = (initialTerm, difference) =>
   Array(PROGRESSION_LENGTH)
     .fill()
-    .map((_, i) => (
-      initialTerm + difference * i
-    ))
-);
+    .map((_, i) => initialTerm + difference * i);
 
 const getQuestion = (progression, index) => {
   const head = progression.slice(0, index);

@@ -21,3 +21,9 @@ publish:
 
 lint:
 	npx eslint .
+
+prettier:
+	npx prettier --ignore-path .gitignore "**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)" $(FLAG)
+
+format:
+	make prettier FLAG=--write
