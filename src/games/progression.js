@@ -16,7 +16,7 @@ const getQuestion = (progression, index) => {
 
 const description = 'What number is missing in the progression?';
 
-export const getProgressionOptions = () => ({
+const getProgressionOptions = () => ({
   initialTerm: getRandomNum(0, 10),
   difference: getRandomNum(1, 10),
   hiddenElementIndex: getRandomNum(0, PROGRESSION_LENGTH - 1),

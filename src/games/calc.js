@@ -11,7 +11,7 @@ const operators = Object.keys(operatorsMapping);
 
 const description = 'What is the result of the expression?';
 
-export const getCalcOptions = () => {
+const getCalcOptions = () => {
   const operatorIndex = getRandomNum(0, operators.length - 1);
   return {
     operator: operators[operatorIndex],

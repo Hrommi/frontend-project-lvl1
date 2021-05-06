@@ -16,7 +16,7 @@ const isPrime = (num) => {
   return true;
 };
 
-export const getPrimeOptions = () => ({
+const getPrimeOptions = () => ({
   num: getRandomNum(0, 99),
 });
 

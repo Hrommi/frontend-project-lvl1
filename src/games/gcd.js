@@ -5,7 +5,7 @@ const description = 'What is the result of the expression?';
 
 const getGcd = (a, b) => (a % b ? getGcd(b, a % b) : Math.abs(b));
 
-export const getGcdOptions = () => ({
+const getGcdOptions = () => ({
   num1: getRandomNum(0, 10),
   num2: getRandomNum(0, 10),
 });
