@@ -16,8 +16,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const startPrimeGame = () => {
-  const num = getRandomNum(1, 99);
+export const getPrimeOptions = () => ({
+  num: getRandomNum(0, 99),
+});
+
+export const startPrimeGame = ({ num }) => {
   const expectedAnswer = isPrime(num) ? 'yes' : 'no';
   return {
     question: num,
@@ -26,5 +29,5 @@ const startPrimeGame = () => {
 };
 
 export default () => {
-  startGame(description, startPrimeGame);
+  startGame(description, startPrimeGame, getPrimeOptions);
 };

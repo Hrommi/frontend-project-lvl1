@@ -16,11 +16,14 @@ const getQuestion = (progression, index) => {
 
 const description = 'What number is missing in the progression?';
 
-const startProgressionGame = () => {
-  const initialTerm = getRandomNum(0, 10);
-  const difference = getRandomNum(1, 10);
+export const getProgressionOptions = () => ({
+  initialTerm: getRandomNum(0, 10),
+  difference: getRandomNum(1, 10),
+  hiddenElementIndex: getRandomNum(0, PROGRESSION_LENGTH - 1),
+});
+
+export const startProgressionGame = ({ initialTerm, difference, hiddenElementIndex }) => {
   const progression = getProgression(initialTerm, difference);
-  const hiddenElementIndex = getRandomNum(0, progression.length - 1);
   const expectedAnswer = String(progression[hiddenElementIndex]);
   return {
     question: getQuestion(progression, hiddenElementIndex),
@@ -29,5 +32,5 @@ const startProgressionGame = () => {
 };
 
 export default () => {
-  startGame(description, startProgressionGame);
+  startGame(description, startProgressionGame, getProgressionOptions);
 };

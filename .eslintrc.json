@@ -2,7 +2,8 @@
   "env": {
     "node": true
   },
-  "extends": ["airbnb-base", "eslint-config-prettier"],
+  "extends": ["airbnb-base", "plugin:jest/recommended", "eslint-config-prettier"],
+  "plugins": ["jest"],
   "rules": {
     "no-console": "off",
     "import/extensions": "off"

@@ -27,3 +27,6 @@ prettier:
 
 format:
 	make prettier FLAG=--write
+
+test:
+	npm test
